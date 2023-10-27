@@ -86,10 +86,10 @@
 
         button {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &kp K_REDO  &kp K_UNDO    &kp K_UNDO  &kp K_REDO  &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &kp K_PASTE  &kp K_COPY  &kp K_CUT     &kp K_CUT   &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans      &trans        &trans      &trans      &trans       &trans  &trans  &trans
+                        &trans       &trans      &trans        &trans      &trans      &trans
             >;
 
             label = "button";
