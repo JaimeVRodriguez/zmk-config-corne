@@ -20,6 +20,42 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
+        bracket_td_L: bracket_td_L {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKET_TD_L";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&kp LEFT_PARENTHESIS>,
+                <&kp LEFT_BRACE>;
+        };
+        quote_TD: quote_TD {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUOTE_TD";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>, <&kp GRAVE>;
+        };
+        colon_TD: colon_TD {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COLON_TD";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+        };
+        bracket_TD_R: bracket_TD_R {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKET_TD_R";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_BRACKET>,
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp RIGHT_BRACE>;
+        };
+        slash_TD: slash_TD {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH_TD";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        };
     };
 
     keymap {
@@ -33,10 +69,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE     &kp Q              &kp W                &kp E            &kp R                &kp T      &kp Y      &kp U                 &kp I             &kp O                 &kp P                       &kp LBKT
-&kp LS(LPAR)  &bhm LEFT_SHIFT A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_COMMAND F  &kp G      &kp H      &bhm RIGHT_COMMAND J  &bhm RIGHT_ALT K  &bhm RIGHT_CONTROL L  &bhm RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LS(RPAR)  &kp Z              &kp X                &kp C            &kp V                &kp B      &kp N      &kp M                 &kp COMMA         &kp DOT               &lt 3 SLASH                 &kp RBKT
-                                                      &kp ESC          &lt 5 SPACE          &kp TAB    &lt 2 RET  &lt 4 BACKSPACE       &lt 1 DELETE
+&kp Q  &kp W              &kp E                &kp R            &kp T                &kp F6           &kp F12        &kp Y                 &kp U             &kp I                 &kp O               &kp P
+&kp A  &bhm LEFT_SHIFT S  &bhm LEFT_CONTROL D  &bhm LEFT_ALT F  &bhm LEFT_COMMAND G  &bracket_td_L    &bracket_TD_R  &bhm RIGHT_COMMAND H  &bhm RIGHT_ALT J  &bhm RIGHT_CONTROL K  &bhm RIGHT_SHIFT L  &kp BACKSLASH
+&kp Z  &lt 3 X            &kp C                &kp V            &kp B                &colon_TD        &kp EQUAL      &kp N                 &kp M             &kp COMMA             &lt 3 DOT           &kp SLASH
+                                               &kp ESC          &lt 5 SPACE          &kp TAB          &lt 2 RET      &lt 4 BACKSPACE       &lt 1 DELETE
             >;
         };
 
@@ -65,10 +101,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none              &none            &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none             &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none
-&none  &kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none             &none              &none          &none              &none            &none
-                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &none             &trans             &none
+&kp TILDE  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none              &none            &none
+&kp MINUS  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none             &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none
+&none      &kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none             &none              &none          &none              &none            &none
+                                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &none             &trans             &none
             >;
 
             label = "symbol";
@@ -98,10 +134,10 @@
 
         navigation {
             bindings = <
-&trans  &trans     &trans     &trans    &bt BT_PRV  &bt BT_NXT    &kp K_REDO      &kp K_PASTE      &kp K_COPY    &kp K_CUT       &kp K_UNDO    &kp BSPC
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI    &trans        &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp CAPSLOCK  &kp EQUAL
-&trans  &trans     &trans     &trans    &trans      &trans        &trans          &kp HOME         &kp PG_DN     &kp PG_UP       &kp END       &kp RSHFT
-                              &trans    &trans      &trans        &kp RET         &kp BSPC         &kp DEL
+&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp K_REDO                &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO    &kp BSPC
+&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &kp LEFT_ARROW            &kp RIGHT_ARROW            &kp UP_ARROW      &kp DOWN_ARROW     &kp CAPSLOCK  &kp EQUAL
+&trans  &trans        &trans        &trans        &trans        &trans          &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp END       &kp RSHFT
+                                    &trans        &trans        &trans          &kp RET                   &kp BSPC                   &kp DEL
             >;
 
             label = "navigation";
