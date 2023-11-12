@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COLON_TD";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&kp COLON>;
+            bindings = <&bhm LEFT_SHIFT SEMICOLON>, <&kp COLON>;
         };
         bracket_TD_R: bracket_TD_R {
             compatible = "zmk,behavior-tap-dance";
@@ -70,9 +70,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&bracket_td_L  &kp Q              &kp W                &kp E            &kp R                &kp T      &kp Y      &kp U             &kp I             &kp O                 &kp P                              &bracket_TD_R
-&colon_TD      &bhm LEFT_SHIFT A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_COMMAND F  &kp G      &kp H      &bhm RIGHT_GUI J  &bhm RIGHT_ALT K  &bhm RIGHT_CONTROL L  &bhm RIGHT_SHIFT NON_US_BACKSLASH  &quote_TD
-&kp MINUS      &kp Z              &kp X                &kp C            &kp V                &kp B      &kp N      &kp M             &kp COMMA         &kp DOT               &kp SLASH                          &kp EQUAL
+&bracket_td_L  &kp Q              &kp W                &kp E            &kp R                &kp T      &kp Y      &kp U             &kp I             &kp O                 &kp P      &bracket_TD_R
+&kp BACKSLASH  &bhm LEFT_SHIFT A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_COMMAND F  &kp G      &kp H      &bhm RIGHT_GUI J  &bhm RIGHT_ALT K  &bhm RIGHT_CONTROL L  &colon_TD  &quote_TD
+&kp MINUS      &kp Z              &kp X                &kp C            &kp V                &kp B      &kp N      &kp M             &kp COMMA         &kp DOT               &kp SLASH  &kp EQUAL
                                                        &kp ESC          &lt 4 SPACE          &kp TAB    &lt 2 RET  &lt 3 BACKSPACE   &lt 1 DELETE
             >;
         };
