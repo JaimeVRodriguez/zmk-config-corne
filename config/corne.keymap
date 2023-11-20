@@ -21,6 +21,7 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
+
         bracket_td_L: bracket_td_L {
             compatible = "zmk,behavior-tap-dance";
             label = "BRACKET_TD_L";
@@ -30,18 +31,21 @@
                 <&kp LEFT_PARENTHESIS>,
                 <&kp LEFT_BRACE>;
         };
+
         quote_TD: quote_TD {
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTE_TD";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>, <&kp GRAVE>;
         };
+
         colon_TD: colon_TD {
             compatible = "zmk,behavior-tap-dance";
             label = "COLON_TD";
             #binding-cells = <0>;
             bindings = <&bhm LEFT_SHIFT SEMICOLON>, <&kp COLON>;
         };
+
         bracket_TD_R: bracket_TD_R {
             compatible = "zmk,behavior-tap-dance";
             label = "BRACKET_TD_R";
@@ -51,6 +55,7 @@
                 <&kp RIGHT_PARENTHESIS>,
                 <&kp RIGHT_BRACE>;
         };
+
         slash_TD: slash_TD {
             compatible = "zmk,behavior-tap-dance";
             label = "SLASH_TD";
@@ -124,9 +129,9 @@
 
         navigation {
             bindings = <
-&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp K_REDO                &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO    &kp BSPC
-&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &kp LEFT_ARROW            &kp RIGHT_ARROW            &kp UP_ARROW      &kp DOWN_ARROW     &kp CAPSLOCK  &kp EQUAL
-&trans  &trans        &trans        &trans        &trans        &trans          &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp END       &kp RSHFT
+&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp LC(RS(K_REDO))        &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO      &kp BSPC
+&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &none                     &kp LEFT                   &kp RIGHT         &kp UP_ARROW       &kp DOWN_ARROW  &kp EQUAL
+&trans  &trans        &trans        &trans        &trans        &trans          &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp END         &kp RSHFT
                                     &trans        &trans        &trans          &kp RET                   &kp BSPC                   &kp DEL
             >;
 
