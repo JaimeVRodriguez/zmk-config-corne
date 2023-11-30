@@ -129,9 +129,9 @@
 
         navigation {
             bindings = <
-&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp LC(RS(K_REDO))        &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO      &kp BSPC
-&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &none                     &kp LEFT                   &kp RIGHT         &kp UP_ARROW       &kp DOWN_ARROW  &kp EQUAL
-&trans  &trans        &trans        &trans        &trans        &trans          &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp END         &kp RSHFT
+&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp LC(RS(K_REDO))        &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO                  &kp BSPC
+&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &none                     &kp LEFT                   &kp RIGHT         &kp UP_ARROW       &kp DOWN_ARROW              &kp EQUAL
+&trans  &trans        &trans        &trans        &trans        &kp LA(F12)     &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
                                     &trans        &trans        &trans          &kp RET                   &kp BSPC                   &kp DEL
             >;
 
