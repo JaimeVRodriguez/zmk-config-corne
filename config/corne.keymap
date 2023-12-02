@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -129,10 +128,10 @@
 
         navigation {
             bindings = <
-&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp LC(RS(K_REDO))        &kp K_PASTE                &kp K_COPY        &kp K_CUT          &kp K_UNDO                  &kp BSPC
-&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &none                     &kp LEFT                   &kp RIGHT         &kp UP_ARROW       &kp DOWN_ARROW              &kp EQUAL
-&trans  &trans        &trans        &trans        &trans        &kp LA(F12)     &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
-                                    &trans        &trans        &trans          &kp RET                   &kp BSPC                   &kp DEL
+&none   &none      &kp LG(F7)  &kp RC(RS(R))  &kp RC(R)      &kp RA(RG(T))    &kp RS(RG(LEFT_BRACKET))  &kp LG(UP_ARROW)  &kp UP_ARROW      &kp LG(DOWN)       &kp RS(RG(RIGHT_BRACKET))   &kp RG(RS(O))
+&trans  &kp LSHFT  &kp LCTRL   &kp LALT       &kp RS(F6)     &kp LC(G)        &kp RA(F12)               &kp LEFT          &kp DOWN          &kp RIGHT          &kp DOWN_ARROW              &kp EQUAL
+&trans  &trans     &kp LG(P)   &kp RS(RG(U))  &kp RG(RA(V))  &kp LG(B)        &kp RG(RA(N))             &kp RG(RA(M))     &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
+                               &trans         &trans         &trans           &kp RET                   &kp BSPC          &kp DEL
             >;
 
             label = "navigation";
