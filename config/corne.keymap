@@ -17,9 +17,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
             flavor = "balanced";
+            require-prior-idle-ms = <150>;
         };
 
         bracket_td_L: bracket_td_L {
@@ -44,6 +45,8 @@
             label = "COLON_TD";
             #binding-cells = <0>;
             bindings = <&bhm LEFT_SHIFT SEMICOLON>, <&kp COLON>;
+
+            tapping-term-ms = <150>;
         };
 
         bracket_TD_R: bracket_TD_R {
@@ -90,9 +93,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR  &kt PRINTSCREEN  &kp F7  &kp F8  &kp F9     &kp F10    &none    &none     &none         &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+&none       &kt PRINTSCREEN  &kp F7  &kp F8  &kp F9     &kp F10    &none    &none     &none         &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
 &none       &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6     &kp F11    &none    &kp RGUI  &kp RALT      &kp LCTRL     &kp RSHFT     &trans
-&none       &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3     &kp F12    &trans   &trans    &trans        &trans        &trans        &trans
+&bt BT_CLR  &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3     &kp F12    &trans   &trans    &trans        &trans        &trans        &trans
                                      &none   &kp SPACE  &kp TAB    &kp RET  &trans    &lt 1 DELETE
             >;
 
@@ -129,7 +132,7 @@
 
         navigation {
             bindings = <
-&none   &none      &kp LG(F7)  &kp RC(RS(R))  &kp RC(R)      &kp RA(RG(T))    &kp RS(RG(LEFT_BRACKET))  &kp RA(UP_ARROW)  &kp UP_ARROW      &kp RA(DOWN)       &kp RS(RG(RIGHT_BRACKET))   &kp RG(RS(O))
+&none   &none      &kp LG(F7)  &kp RC(RS(R))  &kp RC(R)      &kp RG(RS(T))    &kp RS(RG(LEFT_BRACKET))  &kp RA(UP_ARROW)  &kp UP_ARROW      &kp RA(DOWN)       &kp RS(RG(RIGHT_BRACKET))   &kp RG(RS(O))
 &trans  &kp LSHFT  &kp LCTRL   &kp LALT       &kp RS(F6)     &kp LC(G)        &kp RA(F12)               &kp LEFT          &kp DOWN          &kp RIGHT          &kp LG(LS(BACKSPACE))       &kp LG(LS(F12))
 &trans  &trans     &kp LG(P)   &kp RS(RG(U))  &kp RG(RA(V))  &kp LG(B)        &kp RG(RA(N))             &kp RG(RA(M))     &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
                                &trans         &trans         &trans           &kp RET                   &kp BSPC          &kp DEL
