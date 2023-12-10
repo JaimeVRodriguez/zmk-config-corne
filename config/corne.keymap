@@ -78,9 +78,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp Q              &kp W                &kp E            &kp R                &kp T      &kp Y      &kp U             &kp I             &kp O                 &kp P          &kp RIGHT_BRACKET
-&kp BACKSLASH     &bhm LEFT_SHIFT A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_COMMAND F  &kp G      &kp H      &bhm RIGHT_GUI J  &bhm RIGHT_ALT K  &bhm RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
-&kp MINUS         &kp Z              &kp X                &kp C            &kp V                &kp B      &kp N      &kp M             &kp COMMA         &kp DOT               &kp SLASH      &kp EQUAL
+&kp LEFT_BRACKET  &kp Q              &kp W                &kp E            &kp R                &kp T      &kp Y      &kp U             &kp I             &kp O                 &kp P                       &kp RIGHT_BRACKET
+&kp BACKSLASH     &bhm LEFT_SHIFT A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_COMMAND F  &kp G      &kp H      &bhm RIGHT_GUI J  &bhm RIGHT_ALT K  &bhm RIGHT_CONTROL L  &bhm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp MINUS         &kp Z              &kp X                &kp C            &kp V                &kp B      &kp N      &kp M             &kp COMMA         &kp DOT               &kp SLASH                   &kp EQUAL
                                                           &kp ESC          &lt 4 SPACE          &kp TAB    &lt 2 RET  &lt 3 BACKSPACE   &lt 1 DELETE
             >;
         };
