@@ -121,10 +121,10 @@
 
         num {
             bindings = <
-&trans  &kp LBKT   &kp N7  &kp N8      &kp N9        &kp LBRC         &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &kp SEMI   &kp N4  &kp N5      &kp N6        &kp EQUAL        &trans  &kp RGUI  &kp RALT  &kp LCTRL  &kp RSHFT  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2      &kp N3        &kp BACKSLASH    &trans  &trans    &trans    &trans     &trans     &trans
-                           &kp PERIOD  &kp NUMBER_0  &kp MINUS        &trans  &trans    &trans
+&trans  &kp LBKT   &kp N7  &kp N8      &kp N9     &kp LBRC         &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &kp SEMI   &kp N4  &kp N5      &kp N6     &kp EQUAL        &trans  &kp RGUI  &kp RALT  &kp LCTRL  &kp RSHFT  &trans
+&trans  &kp GRAVE  &kp N1  &kp N2      &kp N3     &kp BACKSLASH    &trans  &trans    &trans    &trans     &trans     &trans
+                           &kp PERIOD  &kp SPACE  &kp NUMBER_0     &trans  &trans    &trans
             >;
 
             label = "num";
@@ -132,10 +132,10 @@
 
         navigation {
             bindings = <
-&none   &none      &kp LG(F7)  &kp RC(RS(R))  &kp RC(R)      &kp RG(RS(T))    &kp RS(RG(LEFT_BRACKET))  &kp RA(UP_ARROW)  &kp UP_ARROW      &kp RA(DOWN)       &kp RS(RG(RIGHT_BRACKET))   &kp RG(RS(O))
-&trans  &kp LSHFT  &kp LCTRL   &kp LALT       &kp RS(F6)     &kp LC(G)        &kp RA(F12)               &kp LEFT          &kp DOWN          &kp RIGHT          &kp LG(LS(BACKSPACE))       &kp LG(LS(F12))
-&trans  &trans     &kp LG(P)   &kp RS(RG(U))  &kp RG(RA(V))  &kp LG(B)        &kp RG(RA(N))             &kp RG(RA(M))     &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
-                               &trans         &trans         &trans           &kp RET                   &kp BSPC          &kp DEL
+&none   &none      &kp LG(F7)  &kp RC(RS(R))  &kp RC(R)         &kp RG(RS(T))    &kp RS(RG(LEFT_BRACKET))  &kp RA(UP_ARROW)  &kp UP_ARROW      &kp RA(DOWN)       &kp RS(RG(RIGHT_BRACKET))   &kp RG(RS(O))
+&trans  &kp LSHFT  &kp LCTRL   &kp LALT       &kp LEFT_COMMAND  &kp LC(G)        &kp RA(F12)               &kp LEFT          &kp DOWN          &kp RIGHT          &kp LG(LS(BACKSPACE))       &kp LG(LS(F12))
+&trans  &trans     &kp LG(P)   &kp RS(RG(U))  &kp RG(RA(V))     &kp LG(B)        &kp RS(F6)                &kp RG(RA(M))     &kp RC(RS(LEFT))  &kp RC(RS(RIGHT))  &kp LG(LC(LA(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))
+                               &trans         &trans            &trans           &kp RET                   &kp BSPC          &kp DEL
             >;
 
             label = "navigation";
