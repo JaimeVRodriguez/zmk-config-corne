@@ -109,10 +109,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bhm TILDE GRAVE  &kp EXCLAMATION  &bhm AT_SIGN UP_ARROW  &kp POUND        &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &bhm PLUS EQUAL
-&none             &kp LEFT_ARROW   &kp DOWN_ARROW         &kp RIGHT_ARROW  &none       &none          &none      &none          &none         &kp LEFT_BRACE        &kp RIGHT_BRACE        &bhm PIPE BACKSLASH
-&kp LEFT_SHIFT    &none            &none                  &none            &none       &none          &none      &none          &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_SHIFT
-                                                          &none            &none       &none          &none      &kp BACKSPACE  &none
+&kp GRAVE       &kp EXCLAMATION  &kp AT        &kp POUND       &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&none           &kp LEFT_ARROW   &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &none      &none          &none         &kp LEFT_BRACE        &kp RIGHT_BRACE        &bhm PIPE BACKSLASH
+&kp LEFT_SHIFT  &none            &none         &none           &none            &none          &none      &none          &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_SHIFT
+                                               &none           &none            &none          &none      &kp BACKSPACE  &none
             >;
 
             label = "symbol";
@@ -120,10 +120,10 @@
 
         shortcut {
             bindings = <
-&trans  &none                               &bhm LA(UP_ARROW) LA(LS(UP_ARROW))      &none                                 &kp LC(LS(R))  &kp LG(LS(T))    &trans      &trans       &trans  &bhm LC(LA(O)) LG(LS(O))  &trans  &trans
-&trans  &bhm LG(LEFT_ARROW) LA(LEFT_ARROW)  &bhm LA(DOWN_ARROW) LA(LS(DOWN_ARROW))  &bhm LG(RIGHT_ARROW) LA(RIGHT_ARROW)  &none          &none            &kp LS(F6)  &kp LA(F12)  &none   &kp LG(LA(L))             &none   &trans
-&trans  &none                               &none                                   &none                                 &none          &none            &trans      &trans       &trans  &trans                    &trans  &kp RIGHT_SHIFT
-                                                                                    &none                                 &none          &none            &trans      &trans       &trans
+&trans  &none               &kp LA(LS(UP_ARROW))    &none                                 &kp LC(LS(R))     &kp LG(LS(T))    &trans      &trans       &kp LC(LA(O))  &kp LG(LS(O))  &trans  &trans
+&trans  &kp LA(LEFT_ARROW)  &kp LA(LS(DOWN_ARROW))  &bhm LG(RIGHT_ARROW) LA(RIGHT_ARROW)  &none             &none            &kp LS(F6)  &kp LA(F12)  &none          &kp LG(LA(L))  &none   &trans
+&trans  &none               &none                   &none                                 &none             &none            &trans      &trans       &trans         &trans         &trans  &kp RIGHT_SHIFT
+                                                    &kp LG(LEFT_ARROW)                    &kp LA(UP_ARROW)  &none            &trans      &trans       &trans
             >;
 
             label = "num";
