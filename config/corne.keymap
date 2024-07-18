@@ -120,10 +120,10 @@
 
         shortcut {
             bindings = <
-&trans  &none               &none                   &none                 &kp LC(LS(R))        &kp LG(LS(T))          &trans      &trans       &kp LC(LA(O))  &kp LG(LS(O))  &trans  &trans
-&trans  &kp LA(LEFT_ARROW)  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(UP_ARROW))  &kp LA(RIGHT_ARROW)  &none                  &kp LS(F6)  &kp LA(F12)  &none          &kp LG(LA(L))  &none   &trans
-&trans  &none               &none                   &none                 &none                &none                  &trans      &trans       &trans         &trans         &trans  &kp RIGHT_SHIFT
-                                                    &kp LG(LEFT_ARROW)    &kp LA(UP_ARROW)     &kp LG(RIGHT_ARROW)    &trans      &trans       &trans
+&trans  &none               &none           &none               &kp LC(LS(R))        &kp LG(LS(T))          &trans      &trans       &kp LC(LA(O))  &kp LG(LS(O))             &trans                     &trans
+&trans  &kp LA(LEFT_ARROW)  &kp LA(LS(UP))  &kp LA(LS(DOWN))    &kp LA(RIGHT_ARROW)  &none                  &kp LS(F6)  &kp LA(F12)  &none          &kp LG(LA(L))             &none                      &trans
+&trans  &none               &none           &none               &none                &none                  &trans      &trans       &trans         &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp RIGHT_SHIFT
+                                            &kp LG(LEFT_ARROW)  &kp LA(UP_ARROW)     &kp LG(RIGHT_ARROW)    &trans      &trans       &trans
             >;
 
             label = "num";
@@ -132,8 +132,8 @@
         navigation {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &none  &none  &none  &none  &none  &none
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &none  &none  &none  &none  &none  &none
                                         &none         &none         &none           &none  &none  &none
             >;
 
