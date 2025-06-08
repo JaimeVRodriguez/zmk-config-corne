@@ -120,10 +120,10 @@
 
         shortcut {
             bindings = <
-&trans  &none                   &none           &none             &kp LC(LS(R))        &kp LG(LS(T))    &trans      &trans       &kp LC(LA(O))  &kp LC(LS(N))             &trans                     &trans
-&trans  &kp LC(LA(LEFT_ARROW))  &kp LA(LS(UP))  &kp LA(LS(DOWN))  &kp LA(RIGHT_ARROW)  &none            &kp LS(F6)  &kp LA(F12)  &none          &kp LG(LA(L))             &none                      &trans
-&trans  &none                   &none           &none             &none                &none            &trans      &trans       &trans         &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp RIGHT_SHIFT
-                                                &kp HOME          &kp LC(W)            &kp END          &trans      &trans       &trans
+&trans  &none               &none           &none             &kp LC(LS(R))        &kp LG(LS(T))    &trans      &trans       &kp LC(LA(O))  &kp LC(LS(N))             &trans                     &trans
+&trans  &kp LA(LEFT_ARROW)  &kp LA(LS(UP))  &kp LA(LS(DOWN))  &kp LA(RIGHT_ARROW)  &none            &kp LS(F6)  &kp LA(F12)  &none          &kp LG(LA(L))             &none                      &trans
+&trans  &none               &none           &none             &none                &none            &trans      &trans       &trans         &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp RIGHT_SHIFT
+                                            &kp HOME          &kp LC(W)            &kp END          &trans      &trans       &trans
             >;
 
             label = "num";
